@@ -118,7 +118,7 @@
       }
     }
   },
-  "defaultProject": "angularmeli",
+  "defaultProject": "MercadoLibre",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
