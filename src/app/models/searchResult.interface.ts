@@ -1,4 +1,5 @@
 import { Category } from './category.interface';
+import { Price } from './price.interface';
 
 export interface SearchResult {
   categories: Category[];
@@ -13,12 +14,8 @@ export interface Item {
     lastname: string;
   };
   title: string;
-  price: {
-    currency: string;
-    amount: string;
-    decimals: string;
-  };
-  picture: string;
+  price: Price;
+  thumbnail: string;
   condition: string;
   free_shipping: boolean;
   address: {

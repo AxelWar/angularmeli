@@ -25,7 +25,8 @@ export const SEARCH_RESULTS_MOCK: SearchResult = {
         amount: '134.999',
         decimals: '00'
       },
-      picture: 'http://http2.mlstatic.com/D_916062-MLA43654417337_102020-I.jpg',
+      thumbnail:
+        'http://http2.mlstatic.com/D_916062-MLA43654417337_102020-I.jpg',
       condition: 'new',
       free_shipping: true,
       address: {
@@ -45,7 +46,8 @@ export const SEARCH_RESULTS_MOCK: SearchResult = {
         amount: '148.000',
         decimals: '00'
       },
-      picture: 'http://http2.mlstatic.com/D_738648-MLA43654417399_102020-I.jpg',
+      thumbnail:
+        'http://http2.mlstatic.com/D_738648-MLA43654417399_102020-I.jpg',
       condition: 'new',
       free_shipping: true,
       address: {
@@ -65,7 +67,8 @@ export const SEARCH_RESULTS_MOCK: SearchResult = {
         amount: '89.990',
         decimals: '00'
       },
-      picture: 'http://http2.mlstatic.com/D_732162-MLA42320762979_062020-I.jpg',
+      thumbnail:
+        'http://http2.mlstatic.com/D_732162-MLA42320762979_062020-I.jpg',
       condition: 'new',
       free_shipping: true,
       address: {
@@ -85,7 +88,8 @@ export const SEARCH_RESULTS_MOCK: SearchResult = {
         amount: '97.300',
         decimals: '00'
       },
-      picture: 'http://http2.mlstatic.com/D_896633-MLA42320762680_062020-I.jpg',
+      thumbnail:
+        'http://http2.mlstatic.com/D_896633-MLA42320762680_062020-I.jpg',
       condition: 'new',
       free_shipping: true,
       address: {

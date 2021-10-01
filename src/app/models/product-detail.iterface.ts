@@ -1,3 +1,4 @@
+import { Price } from './price.interface';
 import { Category } from './category.interface';
 
 export interface ProductDetailItem {
@@ -10,12 +11,8 @@ export interface ProductDetailItem {
     id: string;
     seller_id: string;
     title: string;
-    price: {
-      currency: string;
-      amount: string;
-      decimals: string;
-    };
-    picture: string;
+    price: Price;
+    thumbnail: string;
     condition: string;
     free_shipping: boolean;
     sold_quantity: number;

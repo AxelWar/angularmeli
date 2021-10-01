@@ -1,24 +1,21 @@
-import { Component,Input, OnInit, Output,EventEmitter } from '@angular/core';
-import { DataServiceService } from 'src/app/services/data-service.service';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { FormControl } from '@angular/forms';
+
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.scss']
 })
+export class SearchBarComponent implements OnInit {
+  @Output() searchCriteria = new EventEmitter<string>();
+  query: any = '';
 
-export class SearchBarComponent {
-  @Output() searchcriteria = new EventEmitter<String>();
-  searchword: String | undefined;
-  items: any;
+  constructor(private dataService: DataService) {}
+  ngOnInit() {}
 
-  constructor(private dataService: DataServiceService) {}
-
-  searchThis() {
-      /* this.searchcriteria.emit(this.searchword) */
-      this.dataService.getItems().then((response)=>{
-        this.items = response;
-      })
+  searchThis(value: string) {
+    this.searchCriteria.emit(value);
   }
-
 }

@@ -24,7 +24,7 @@ export const PRODUCT_DETAIL_MOCK: ProductDetailItem = {
       amount: '134.999',
       decimals: '00'
     },
-    picture: 'http://http2.mlstatic.com/D_916062-MLA43654417337_102020-O.jpg',
+    thumbnail: 'http://http2.mlstatic.com/D_916062-MLA43654417337_102020-O.jpg',
     condition: 'new',
     free_shipping: true,
     sold_quantity: 2,

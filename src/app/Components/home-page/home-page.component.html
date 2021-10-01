@@ -1,2 +1,3 @@
-<app-search-bar></app-search-bar>
+<app-search-bar (searchCriteria)="getQuery($event)"></app-search-bar>
 <app-breadcrumb></app-breadcrumb>
+<app-items-results [items]="items" [isLoading]="isLoading"></app-items-results>
